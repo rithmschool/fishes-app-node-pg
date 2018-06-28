@@ -35,15 +35,13 @@ $(document).ready(function() {
     const id = $(e.target)
       .parent()
       .data("id");
-    const type = $
-      .ajax({
-        method: "DELETE",
-        url: `http://localhost:3000/fishes/${id}`
-      })
-      .then(function() {
-        $(e.target)
-          .parent()
-          .remove();
-      });
+    $.ajax({
+      method: "DELETE",
+      url: `http://localhost:3000/fishes/${id}`
+    }).then(function() {
+      $(e.target)
+        .parent()
+        .remove();
+    });
   });
 });
