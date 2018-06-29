@@ -11,4 +11,4 @@ Here is a small application that consists of an Express API backed with Postgres
 ## Fishes-app frontend
 
 1.  Start using `http-server -p 3001`
-2.  Head to [localhost:3000](localhost:3001)
+2.  Head to [localhost:3001](localhost:3001)
